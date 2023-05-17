@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*background-color: #330000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.32'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;   
+    font-size: sans-serif;  
+    min-width: 600px;*/
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(114,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(107,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='22.439999999999998'%3E%3Cpath transform='translate(-82.25 4.800000000000001) rotate(-0.75 1409 581) scale(0.959225)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='7.48' transform='translate(-99.5 62) rotate(6.1 800 450) scale(1.006772)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(15.799999999999997 -73.5) rotate(48.5 401 736) scale(1.006772)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='6.8'%3E%3Cpath transform='translate(372 0.1999999999999993) rotate(-0.04999999999999982 150 345) scale(0.9870749999999999)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='14.96' transform='translate(-110.5 -167.5) rotate(43.19999999999999 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-232 64) rotate(7.199999999999999 1400 132) scale(0.875)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* header y nav*/
+header{
+    
+    display: flex;
+    min-height: 70px;
+    background-color: hsl(184, 87%, 59%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+
+}
+.header-inner  img{
+    height: 90px;
+    width: 100px;
+    margin-right: 3px; 
+}
+nav a{
+    font-weight: 600;
+    font-size: 125%;
+    padding:3px
+}
+nav a:hover{
+    color: white;
+    font-size: 130%;
+    
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+}
+
+/* Tamaños de letras y colores generales*/
+h2{
+    text-align: center;
+    font-size: 175%;
+    text-transform: uppercase;
+    text-indent: -2%;
+    
+}
+h3{
+    text-align: center; 
+    text-transform: uppercase;
+    font-size: 125% ;
+    font-weight: 600;
+    padding: 0px;
+    /*display: inline;*/
+}
+
+p{
+
+    font-size: 135%;
+    text-indent: 2%;
+    line-height: 125%;
+    padding: 3%;
+    text-align: justify;
+}
+a:hover{
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: -4px;
+}
+
+/* enfoque de la parte experiencia */
+.one-third{
+    width: 31.5%;
+    float: left ;
+    padding:10px;
+    margin-left: 2px;
+    text-align: center;
+}
+.one-third div:hover{
+    background-color: rgba(61, 204, 229, 0.5);
+}
+.one-third h3{
+    padding-top: 20px;
+    display: block
+}
+.icon-wrap {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    background-color: aquamarine;
+    border-radius: 125px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.icon-wrap i {
+    font-size:  57px;
+    text-align: center;
+    padding: 25%
+    
+}
+
+/* Arreglo de floats*/
+.clearfix-padding{
+    clear: both;
+    padding: 2%;
+}
+
+/* Enfoque de nuestros servicios*/
+.one-third-padding{
+    width: 31.5%;
+    float: left ;
+    padding:10px;
+    text-align: center;
+}
+.one-third-padding img{
+    transition-duration: .5s;
+}
+.one-third-padding img:hover{
+    transition-duration: .5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: skew(-10deg,5deg);
+}
+.one-third-padding h3{
+    padding:10px;
+}
+.one-third-padding img{
+    width: 400px;
+    height: 250px;
+    padding:10px;
+}
+
+
+/* Enfoque de nuestras politicas*/
+
+.politicas{
+    width: 31.5%;
+    float: left ;
+    padding:10px;
+    text-align: center;
+}
+
+/* Footer de la pagina web*/
+
+footer{
+    background-color: hsl(184, 87%, 59%);
+    width: 100%;
+    overflow:auto;
+}
+.icon-text{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.icon-text-icon{
+    float: left;
+    width: 20%;
+    padding: 4%;   
+    height: 50px;
+}
+.icon-text-text{
+    float:left;
+    width: 60%;
+    padding: 4% 4% 2% 0;
+}
+.footer-nav {
+    text-align: left;
+    list-style: none;
+}
+.footer-nav a{
+    font-size: 160%;
+    color:black;
+    font-weight: 300;
+    
+}
+.footer-nav a:hover{
+    color:bisque;
+}
+.social{
+    text-align: center;
+}
+.social li{
+    display: inline;
+}
+.social i {
+    font-size:420%;
+    margin: 1%;
+    padding: 5%;
+    color:rgb(52, 64, 74);
+}
+.second-footer{
+    border-top: 1px solid #094e99;
+}
+.second-footer p{
+    height: 50px;
+    padding: 10px;
+}
